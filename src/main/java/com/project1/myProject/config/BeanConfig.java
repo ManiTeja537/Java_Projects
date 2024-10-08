@@ -1,15 +1,15 @@
-package com.project1.myProject.beans;
+package com.project1.myProject.config;
 
 import com.project1.myProject.model.Product;
-import com.project1.myProject.service.DataService;
+import com.project1.myProject.service.ProductService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class BeanCreation {
+public class BeanConfig {
     @Bean
-    public DataService getDataService(){
-        return new DataService();
+    public ProductService getProductService(){
+        return new ProductService();
     }
     @Bean
     public Product getProduct(){
