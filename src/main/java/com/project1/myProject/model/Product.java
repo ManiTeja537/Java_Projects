@@ -19,4 +19,5 @@ public class Product {
     private UUID id;
     private String name;
     private int stock;
+    private double price;
 }
